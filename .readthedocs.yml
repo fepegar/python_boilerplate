@@ -1,4 +1,10 @@
-requirements_file: docs/requirements.txt
-python.system_packages: true
-
+python:
+   version: 3.7
+   install:
+      - requirements: docs/requirements.txt
+      - method: pip
+        path: .
+        extra_requirements:
+            - docs
+   system_packages: true
 
