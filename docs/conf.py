@@ -26,6 +26,11 @@ import sphinx_rtd_theme
 
 # -- General configuration ---------------------------------------------
 
+autodoc_mock_imports = [
+    'numpy',
+    'torch',
+]
+
 # If your documentation needs a minimal Sphinx version, state it here.
 #
 # needs_sphinx = '1.0'
@@ -161,12 +166,4 @@ texinfo_documents = [
      'python_boilerplate',
      'One line description of project.',
      'Miscellaneous'),
-]
-
-
-
-
-autodoc_mock_imports = [
-    'numpy',
-    'torch',
 ]
