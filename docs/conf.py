@@ -17,6 +17,14 @@
 # relative to the documentation root, use os.path.abspath to make it
 # absolute, like shown here.
 #
+
+
+autodoc_mock_imports = [
+    'numpy',
+    'torch',
+]
+
+
 import os
 import sys
 sys.path.insert(0, os.path.abspath('..'))
@@ -26,10 +34,7 @@ import sphinx_rtd_theme
 
 # -- General configuration ---------------------------------------------
 
-autodoc_mock_imports = [
-    'numpy',
-    'torch',
-]
+
 
 # If your documentation needs a minimal Sphinx version, state it here.
 #
