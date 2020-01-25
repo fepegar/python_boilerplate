@@ -13,6 +13,9 @@ Python Boilerplate
         :target: https://python-boilerplate.readthedocs.io/en/latest/?badge=latest
         :alt: Documentation Status
 
+.. image:: https://codecov.io/gh/fepegar/python_boilerplate/branch/master/graphs/badge.svg
+        :target: https://codecov.io/github/fepegar/python_boilerplate
+        :alt: Coverage Status
 
 .. image:: https://pyup.io/repos/github/fepegar/python_boilerplate/shield.svg
      :target: https://pyup.io/repos/github/fepegar/python_boilerplate/
