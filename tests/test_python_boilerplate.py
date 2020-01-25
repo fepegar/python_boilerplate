@@ -31,3 +31,7 @@ class TestPython_boilerplate(unittest.TestCase):
         help_result = runner.invoke(cli.main, ['--help'])
         assert help_result.exit_code == 0
         assert '--help  Show this message and exit.' in help_result.output
+
+    def test_coverage_1(self):
+        from python_boilerplate.python_boilerplate import Car
+        car = Car(1, 2)

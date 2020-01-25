@@ -1,9 +1,18 @@
+# Disable sudo to speed up the build
+sudo: false
+
+# Set the build language to Python
 language: python
+
 python:
-- 3.7
-- 3.6
-install: pip install -U tox-travis
-script: tox
+  - 3.7
+  - 3.6
+
+install:
+  - pip install -U codecov
+  - pip install -U tox-travis
+script:
+  tox
 deploy:
   provider: pypi
   distributions: sdist bdist_wheel
@@ -14,3 +23,9 @@ deploy:
     tags: true
     repo: fepegar/python_boilerplate
     python: 3.7
+
+after_success:
+    # Report coverage results to codecov.io
+    # and export tox environment variables
+    - pip install codecov
+    - codecov
